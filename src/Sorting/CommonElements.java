@@ -1,7 +1,7 @@
 package Sorting;
 import java.util.*;
 public class CommonElements {
-    public static ArrayList<Integer> commonElements(int a[], int b[]) {
+    public static ArrayList<Integer> commonElements(int[] a, int[] b) {
         ArrayList<Integer> arr = new ArrayList<>();
         Arrays.sort(a);
         Arrays.sort(b);
@@ -24,8 +24,8 @@ public class CommonElements {
     public static void main(String[] args) {
         int[] a = {3, 4, 2, 2, 4};
         int[] b = {3, 2, 2, 7};
-        ArrayList<Integer> arr = new ArrayList<>();
-        arr=commonElements(a,b);
-        System.out.println(arr);
+        ArrayList<Integer> res = commonElements(a, b);
+        System.out.println(res);
     }
+
 }
