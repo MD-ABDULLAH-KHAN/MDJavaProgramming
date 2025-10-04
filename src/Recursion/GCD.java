@@ -2,8 +2,8 @@ package Recursion;
 import java.util.*;
 public class GCD {
     public  static int recursiveGCD(int a,int b){
-        if(b%a==0) return a;
-        return recursiveGCD(b%a,a);
+        if (a == 0) return b;
+        return recursiveGCD(b % a, a);
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
